@@ -21,3 +21,5 @@ directory. If there was error, then it will be printed in the terminal.
 - The pathname should not exceed length of 300. It should also not be empty.
 - The file to be written to couldn’t be opened
 - The pid given does not correspond to any task in task_struct
+
+Please read the [WriteUp.pdf](https://github.com/samikshamodi/OperatingSystems/blob/master/My%20Own%20System%20Call/WriteUp.pdf) for a more detailed description.

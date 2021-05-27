@@ -114,12 +114,14 @@ I use remove to remove the files and directory (if they’re empty and -d option
 7. cd Desktop Pictures -> Too many arguments
 8. cd Desktop/shell -> Goes to Desktop/shell
 
+
 9. echo hello world -> Prints hello world
 10. echo hello -> Prints hello
 11. echo -n hello -> Prints hello without newline
 12. echo -E hello\tworld -> Prints hellotworld
 13. echo -E "hello\tworld" -> Prints hello\tworld
 14. echo -> Prints newline.
+
 
 15. history -> Prints history of current shell
 16. history -c -> Clears history
@@ -129,10 +131,13 @@ I use remove to remove the files and directory (if they’re empty and -d option
 20. history -r -> Argument not supported. “Invalid argument”
 21. history hello world -> “Invalid argument”
 
+
 22. pwd -> Prints the current directory
 23. pwd -r -> Invalid argument. Not supported
 
+
 24. exit -> exit terminal
+
 
 25. ls -> Prints contents of current directory excluding files starting with '.'
 26. ls -a -> Prints contents of current directory including files starting with '.'
@@ -143,10 +148,12 @@ I use remove to remove the files and directory (if they’re empty and -d option
 31. ls haha -> Directory not found
 32. ls -t -> Invalid argument. Not supported
 
+
 33. date -> Print IST date
 34. date -u -> Print UTC date
 35. date -I -> (capital i) Print date in ISO 8601 format
 36. date -t -> Invalid argument. Not supported
+
 
 37. cat -> Opens cat in interactive mode
 38. cat -n -> number all output lines in interactive mode.
@@ -158,6 +165,7 @@ I use remove to remove the files and directory (if they’re empty and -d option
 44. cat -E shell.c -> display $ at end of each line from shell.c
 45. cat joker -> File does not exist
 
+
 46. mkdir -> Insufficient arguments
 47. mkdir foo -> Makes directory foo
 48. mkdir abc/xyz -> Cannot create parent directories if they don’t exist. Error.
@@ -166,6 +174,7 @@ I use remove to remove the files and directory (if they’re empty and -d option
 51. mkdir hello -> Directory hello exists already
 52. mkdir -t -> Invalid argument
 
+
 53. rm hello -> Can’t do rm on directories
 54. rm -d hello -> Removes hello
 55. rm -i f1 -> Asks before removing f1. If answer is y then removes.
@@ -173,3 +182,4 @@ I use remove to remove the files and directory (if they’re empty and -d option
 57. rm -d abc/xyz abc -> Removes abc and the directory inside it which is xyz
 58. rm -t -> Invalid argument. Not supported.
 
+Please read the [WriteUp.pdf](https://github.com/samikshamodi/OperatingSystems/tree/master/Linux%20Shell) for a more detailed description.
