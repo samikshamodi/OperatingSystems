@@ -17,7 +17,7 @@ of the given pid, provided it exists in task_struct. The next line will tell us 
 saved in the given input file, which we can confirm by opening the file saved in the home
 directory. If there was error, then it will be printed in the terminal.
 
-## Erros Handled
+## Errors Handled
 - The pathname should not exceed length of 300. It should also not be empty.
 - The file to be written to couldn’t be opened
 - The pid given does not correspond to any task in task_struct
