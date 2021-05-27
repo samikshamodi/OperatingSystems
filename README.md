@@ -1,5 +1,5 @@
 # Operating Systems
-These are some of the assignments I did in my fourth semester at IIITD for the course CSE231: Operating Systems taught by Dr. Sambuddho Chakravarty.
+These are some of the assignments I did in my third semester at IIITD for the course CSE231: Operating Systems taught by Dr. Sambuddho Chakravarty.
 
 - Bootlader in asm 
   - Implemented a simple bootloader, booted via a legacy BIOS and booted using qemu emulator
