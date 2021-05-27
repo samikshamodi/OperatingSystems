@@ -1,4 +1,4 @@
-# My Linux Shell
+# Linux Shell
 A Linux shell coded in C. It supports 10 commands with 2 options each and accepts all possible arguments. It has 5 internal and 5 external commands which were implemented using fork,execvp,wait and exit system calls. It also handled various corner cases and errors.
 
 ## How My Shell Works
@@ -182,4 +182,4 @@ I use remove to remove the files and directory (if they’re empty and -d option
 57. rm -d abc/xyz abc -> Removes abc and the directory inside it which is xyz
 58. rm -t -> Invalid argument. Not supported.
 
-Please read the [WriteUp.pdf](https://github.com/samikshamodi/OperatingSystems/tree/master/Linux%20Shell) for a more detailed description.
+Please read the [WriteUp.pdf](https://github.com/samikshamodi/OperatingSystems/blob/master/Linux%20Shell/WriteUp.pdf) for a more detailed description.
