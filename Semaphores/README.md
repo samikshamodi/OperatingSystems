@@ -40,4 +40,4 @@ The program is DiningPhilosophers_NB.c
 
 - To implement signal pthread_mutex_lock was used. We need to make the signal function an atomic operation so for that we acquire the mutex lock. We then need to increment the count which I do. After that we release the mutex lock.
 
-Please read the [WriteUp.pdf](https://github.com/samikshamodi/OperatingSystems/blob/master/Semaphores/WriteUp.pdf) for a more detailed description.
+Please read the [WriteUp.pdf](WriteUp.pdf) for a more detailed description.

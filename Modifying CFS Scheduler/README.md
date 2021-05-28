@@ -12,4 +12,4 @@ To test the correct functionality of the modified scheduler, I ran tasks requiri
 
 Note: Linux/kernel v5.9 distribution was used for this assignment
 
-Please read the [WriteUp.pdf](https://github.com/samikshamodi/OperatingSystems/blob/master/Modifying%20CFS%20Scheduler/WriteUp.pdf) for a more detailed description.
+Please read the [WriteUp.pdf](WriteUp.pdf) for a more detailed description.

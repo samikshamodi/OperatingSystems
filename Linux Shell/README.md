@@ -182,4 +182,4 @@ I use remove to remove the files and directory (if they’re empty and -d option
 57. rm -d abc/xyz abc -> Removes abc and the directory inside it which is xyz
 58. rm -t -> Invalid argument. Not supported.
 
-Please read the [WriteUp.pdf](https://github.com/samikshamodi/OperatingSystems/blob/master/Linux%20Shell/WriteUp.pdf) for a more detailed description.
+Please read the [WriteUp.pdf](WriteUp.pdf) for a more detailed description.
