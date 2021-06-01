@@ -44,48 +44,48 @@ external commands - ls,cat,date,rm and mkdir
   - -d remove empty directories
 
 ## Handling of Shell Commands
-- cd
+- cd   
 It uses chdir to navigate to the given directory.
   - If more than one argument is given, it prints the error message “Too many arguments.
   - If an invalid option is given, it prints the error message “Invalid argument”.
   - If the given directory does not exist, it prints the error message “Directory not found”.
 
-- echo
+- echo   
 It processes the input according to the flag and gives the required output.
 
-- history
+- history    
 History is kept track of in the shell using a 2d char array. To print the history it traverses the array and prints it.
   - If just -w option is used without any file name then it writes the current history to the .txt, else it creates the file specified and writes history to that file.
   - If the program is unable to create the file, it prints the error message “Unable to create file”.
   - If an invalid option is given, it prints the error message “Invalid argument”.
   - If arguments are given with history for eg history hello world, then it prints the message “Invalid argument”.
 
-- pwd
+- pwd    
 It prints the current working directory by using getcwd
   - If getcwd returns null, it prints the error message “Unable to get working directory” 
   - If an invalid option is given then it print the error message “Invalid argument”
 
-- exit
+- exit   
 It uses exit() to exit the current terminal session.
 
-- ls
+- ls   
 I used readdir to read the files present in the given directory and store them in a 2d array a. Then depending on the flag given I sort them alphabetically. If the flag is -r then I sort them in reverse order. If the flag is -a I print the directories starting with ‘.’ also.
   - If an invalid option is given, it prints the error message “Invalid argument.”
   - If the directory given can’t be found then it prints the error message “Directory not found”
   - If multiple directories are given like ls Desktop Picture, then it shows the error message “Too many arguments”
 
-- date
+- date    
 I use the time function for this. Passing the argument local to asctime() gives me the IST time and passing the argument utc to asctime() gives me the utc time. I also use strftime() to print the date
 in iso 8601 format.
   - If the function time() is unable to execute properly, it prints the error message “Time failed” and returns.
   - If an invalid option is given, it prints the error message “Invalid argument”
 
-- cat
+- cat    
 I use fopen to open the file given as argument then read it using fgets and then print it based on the options.
   - If the given file doesn’t exists, it prints the error message “File [name] doesn’t exist”
   - If an invalid option is given, it prints the error message “Invalid argument”
 
-- mkdir
+- mkdir    
 I use stat to find out whether the directory already exists, if it doesn’t I use mkdir to make the directory if the command and arguments are valid. Depending if the -v flag is used, I print the message for each directory created.
   - If just mkdir is given without any arguments, it prints the error message “Insufficient arguments”.
   - If I don’t specify the name of the directory to be made after the option eg mkdir -p , it prints the error message “Insufficient arguments”
@@ -94,7 +94,7 @@ I use stat to find out whether the directory already exists, if it doesn’t I u
   - If a nested directory is given eg abc/xyz and abc doesn’t exist and the -p option is not used, it prints the error message “Cannot create directory [name]. No such file or directory exists”
   - If an invalid option is given, it prints the error message “Invalid argument”
 
-- rm
+- rm    
 I use remove to remove the files and directory (if they’re empty and -d option is used). If the -i option is used, it asks for a yes before deleting the file, and deletes only if the answer is yes.
   - I do not allow the user to delete the files that are used by my shell to run. If they’re given as arguments, it prints the error message “You do not have permission to remove [name] file”
   - If you try to do rm on directories without -d option, it prints an error message “Can’t do rm on directories”. I use opendir() to determine if the given argument is a directory.
